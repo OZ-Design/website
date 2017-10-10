@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Business Page</title>
+  <link rel="stylesheet" media="(max-width: 748px)" href="css/main-mobile.css" />
+  <link rel="stylesheet" media="(min-width: 749px) and (max-width: 1099px)" href="css/main-tablet.css" />
+  <link rel="stylesheet" media="(min-width: 1100px)" href="css/main.css" />
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+  <link rel="stylesheet" href="css/lity.min.css" />
+</head>
+<body>
+
+  <!--Header-->
+  <header class="header">
+    <div class="main-menu_wrapper">
+      <div class="container">
+        <ul class="main-menu">
+          <li class="main-menu_item">
+            <a href="#">Home</a>
+          </li>
+          <li class="main-menu_item">
+            <a href="#">Health screenings</a>
+          </li>
+          <li class="main-menu_item">
+            <a href="#">Corporate Wellness</a>
+          </li>
+          <li class="main-menu_item">
+            <a href="#">Church Wellness</a>
+          </li>
+          <li class="main-menu_item">
+            <a href="#">Medical Clinics</a>
+          </li>
+          <li class="main-menu_item">
+            <a href="#">Medication</a>
+          </li>
+          <li class="main-menu_item">
+            <a href="#">Sale</a>
+          </li>
+          <li class="main-menu_item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header_block container">
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.png" alt="Healthviber logo">
+        </a>
+      </div>
+      <div class="search">
+        <form action="#" class="search_form">
+          <select name="category" id="search_category" class="search_category">
+            <option>All categories</option>
+            <option>Heart Rate Monitors</option>
+            <option>Blood Pressure</option>
+            <option>Water Bottles</option>
+            <option>Outdoor Sports</option>
+            <option>Health and Wellness</option>
+            <option>Electronics</option>
+            <option>Clearance</option>
+            <option>Blood Pressure</option>
+            <option>Water Bottles</option>
+            <option>Outdoor Sports</option>
+          </select>
+          <input class="search_input" type="text" name="search" required="">
+          <button class="search_submit">
+            <svg>
+              <use xlink:href="img/icons.svg#search"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="header_cart">
+        <div class="cart-preview js-popup-toggle" data-target="#cart-popup">
+          <div class="cart-preview_icon">
+            <svg>
+              <use xlink:href="img/icons.svg#cart"/>
+            </svg>
+          </div>
+          <div class="cart-preview_info">
+            <div class="cart-preview_info-count">4</div>
+            <div class="cart-preview_info-title">Cart</div>
+          </div>
+        </div>
+
+        <!-- Hidden Cart Popup -->
+        <div id="cart-popup" class="cart cart--popup js-popup-inner">
+          <div class="cart_list">
+
+            <div class="cart-products_item cart-products_item--popup">
+              <div class="cart-products_item-info cart-products_item-info--popup">
+                <div class="cart-products_item-img cart-products_item-img--sm">
+                  <img src="img/product/1.jpg" alt="">
+                </div>
+                <div class="cart-products_item-descr">
+                  <div class="title--s cart-products_item-title--popup">
+                    <a href="#"><span class="cart-products_item-quantity">2x</span>Jobst for Men Dress...</a>
+                  </div>
+                  <div class="cart-products_item-option--short">S, Black, Closed Toe...</div>
+                  <div class="cart-products_item-price--popup">$49</div>
+                </div>
+              </div>
+              <div class="cart-products_item-delete cart-products_item-delete--popup">
+                <button class="cart_products-delete js-cart_products-delete">
+                  <svg>
+                    <use xlink:href="img/icons.svg#trash"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="cart-products_item cart-products_item--popup">
+              <div class="cart-products_item-info cart-products_item-info--popup">
+                <div class="cart-products_item-img cart-products_item-img--sm">
+                  <img src="img/product/2.jpg" alt="">
+                </div>
+                <div class="cart-products_item-descr">
+                  <div class="title--s cart-products_item-title--popup">
+                    <a href="#"><span class="cart-products_item-quantity">2x</span>Jobst for Men Dress...</a>
+                  </div>
+                  <div class="cart-products_item-option--short">S, Black, Closed Toe...</div>
+                  <div class="cart-products_item-price--popup">$49</div>
+                </div>
+              </div>
+              <div class="cart-products_item-delete cart-products_item-delete--popup">
+                <button class="cart_products-delete js-cart_products-delete">
+                  <svg>
+                    <use xlink:href="img/icons.svg#trash"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="cart-products_item cart-products_item--popup">
+              <div class="cart-products_item-info cart-products_item-info--popup">
+                <div class="cart-products_item-img cart-products_item-img--sm">
+                  <img src="img/product/3.jpg" alt="">
+                </div>
+                <div class="cart-products_item-descr">
+                  <div class="title--s cart-products_item-title--popup">
+                    <a href="#"><span class="cart-products_item-quantity">2x</span>Jobst for Men Dress...</a>
+                  </div>
+                  <div class="cart-products_item-option--short">S, Black, Closed Toe...</div>
+                  <div class="cart-products_item-price--popup">$49</div>
+                </div>
+              </div>
+              <div class="cart-products_item-delete cart-products_item-delete--popup">
+                <button class="cart_products-delete js-cart_products-delete">
+                  <svg>
+                    <use xlink:href="img/icons.svg#trash"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="cart-products_item cart-products_item--popup">
+              <div class="cart-products_item-info cart-products_item-info--popup">
+                <div class="cart-products_item-img cart-products_item-img--sm">
+                  <img src="img/product/4.jpg" alt="">
+                </div>
+                <div class="cart-products_item-descr">
+                  <div class="title--s cart-products_item-title--popup">
+                    <a href="#"><span class="cart-products_item-quantity">2x</span>Jobst for Men Dress...</a>
+                  </div>
+                  <div class="cart-products_item-option--short">S, Black, Closed Toe...</div>
+                  <div class="cart-products_item-price--popup">$49</div>
+                </div>
+              </div>
+              <div class="cart-products_item-delete cart-products_item-delete--popup">
+                <button class="cart_products-delete js-cart_products-delete">
+                  <svg>
+                    <use xlink:href="img/icons.svg#trash"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <hr class="hr--notop">
+          <div class="cart_summary">
+            <div class="summary summary--sm">
+              <div class="summary_name">Discount total:</div>
+              <div class="summary_val">$99.99</div>
+            </div>
+            <div class="summary summary--sm">
+              <div class="summary_name">Shipping:</div>
+              <div class="summary_val">Free shipping</div>
+            </div>
+            <hr>
+            <div class="summary summary--sm">
+              <div class="summary_name">Total:</div>
+              <div class="summary_val summary_val-price">$559.76</div>
+            </div>
+          </div>
+          <div class="cart_actions cart_actions--popup">
+            <button class="btn btn--full btn--cart">Checkout</button>
+          </div>
+        </div>
+        <!-- End of Hidden Cart Popup -->
+      </div>
+      <div class="user">
+        <div class="user_pic">
+          <svg>
+            <use xlink:href="img/icons.svg#user"/>
+          </svg>
+        </div>
+        <div class="user_options">
+          <a class="user-option--signin" href="#">Sign In</a>
+          <a class="user-option--login" href="#">Login</a>
+          <a class="user-option--checkout" href="#">Checkout</a>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <button class="mobile-menu_button js-popup-toggle" data-target="#mobile-menu-popup">Menu</button>
+        <div id="mobile-menu-popup" class="mobile-menu-popup js-popup-inner">
+
+          <!-- Search block START -->
+          <div class="search search--mobile">
+            <form action="#" class="search_form">
+              <select name="category" id="search_category" class="search_category">
+                <option>All categories</option>
+                <option>Heart Rate Monitors</option>
+                <option>Blood Pressure</option>
+                <option>Water Bottles</option>
+                <option>Outdoor Sports</option>
+                <option>Health and Wellness</option>
+                <option>Electronics</option>
+                <option>Clearance</option>
+                <option>Blood Pressure</option>
+                <option>Water Bottles</option>
+                <option>Outdoor Sports</option>
+              </select>
+              <input class="search_input" type="text" name="search" required="">
+              <button class="search_submit">
+                <svg>
+                  <use xlink:href="img/icons.svg#search"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <!-- Search block END -->
+
+          <!-- User block START -->
+          <div class="user user--mobile">
+            <div class="user_pic">
+              <svg>
+                <use xlink:href="img/icons.svg#user"/>
+              </svg>
+            </div>
+            <div class="user_options">
+              <a class="user-option--signin" href="#">Sign In</a>
+              <a class="user-option--login" href="#">Login</a>
+              <a class="user-option--checkout" href="#">Checkout</a>
+            </div>
+          </div>
+          <!-- User block END -->
+
+          <!-- Main Menu block START -->
+          <div class="mobile-menu_wrapper">
+            <button class="btn btn--full js-popup-toggle" data-target="#main-menu">Main Menu</button>
+            <ul id="main-menu" class="main-menu main-menu--mobile">
+              <li class="main-menu_item">
+                <a href="#">Home</a>
+              </li>
+              <li class="main-menu_item">
+                <a href="#">Health screenings</a>
+              </li>
+              <li class="main-menu_item">
+                <a href="#">Corporate Wellness</a>
+              </li>
+              <li class="main-menu_item">
+                <a href="#">Church Wellness</a>
+              </li>
+              <li class="main-menu_item">
+                <a href="#">Medical Clinics</a>
+              </li>
+              <li class="main-menu_item">
+                <a href="#">Medication</a>
+              </li>
+              <li class="main-menu_item">
+                <a href="#">Sale</a>
+              </li>
+              <li class="main-menu_item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Main Menu block END -->
+
+          <!-- Categories Menu block START -->
+          <div class="mobile-menu_wrapper">
+            <button class="btn btn--full js-popup-toggle" data-target="#categories-menu">Categories Menu</button>
+            <div id="categories-menu" class="categories container">
+              <a class="categories_item">Heart Rate Monitors</a>
+              <a class="categories_item">Blood Pressure</a>
+              <a class="categories_item">Water Bottles</a>
+              <a class="categories_item">Outdoor Sports</a>
+              <a class="categories_item">Health and Wellness</a>
+              <a class="categories_item">Electronics</a>
+              <a class="categories_item">Clearance</a>
+              <a class="categories_item">Blood Pressure</a>
+              <a class="categories_item">Water Bottles</a>
+              <a class="categories_item">Outdoor Sports</a>
+              <a class="categories_item">Health and Wellness</a>
+              <a class="categories_item">Electronics</a>
+            </div>
+          </div>
+          <!-- Categories Menu block END -->
+
+        </div>
+      </div>
+    </div>
+    <hr class="hr--header">
+    <div class="categories container">
+      <a class="categories_item">Heart Rate Monitors</a>
+      <a class="categories_item">Blood Pressure</a>
+      <a class="categories_item">Water Bottles</a>
+      <a class="categories_item">Outdoor Sports</a>
+      <a class="categories_item">Health and Wellness</a>
+      <a class="categories_item">Electronics</a>
+      <a class="categories_item">Clearance</a>
+      <a class="categories_item">Blood Pressure</a>
+      <a class="categories_item">Water Bottles</a>
+      <a class="categories_item">Outdoor Sports</a>
+      <a class="categories_item">Health and Wellness</a>
+      <a class="categories_item">Electronics</a>
+    </div>
+  </header>
+
+  <!-- Google Map Start -->
+  <iframe id="js-gmap" src="https://www.google.com/maps/embed/v1/place?q=8300 S Brandon Ave+Chicago+60617&amp;key=AIzaSyBIvNFevwj5bAO1MmKsPl3wLGKypOfM3Qw=" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+  <!-- Google Map End -->
+
+  <div class="block block--subheader block--divided">
+    <div class="container">
+      <div class="block_titles">
+        <div class="title title--light title--nopad title--blocked">ACCESS Brandon Family Health Center</div>
+        <div class="title title--light title--nopad title--blocked title--s">8300 S Brandon Ave</div>
+      </div>
+      <div class="block_rating">
+        <div class="rating_wrapper">
+          <div class="rating rating--read-only-l rating--short" data-rating="3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Business Description -->
+  <div class="container business-descr">
+    
+    <div class="business-descr_tabs">
+      <!-- Nav tabs -->
+      <ul class="js-tabs tabs_nav nav-tabs--chevron">
+        <li class="tabs_item tabs_item--active" data-tab="#tab-1">Overview</li>
+        <li class="tabs_item" data-tab="#tab-2">About Us</li>
+        <li class="tabs_item" data-tab="#tab-3">Services</li>
+        <li class="tabs_item" data-tab="#tab-4">Articles</li>
+        <li class="tabs_item" data-tab="#tab-5">Videos</li>
+        <li class="tabs_item" data-tab="#tab-6">Contacts & Location</li>
+      </ul>
+  
+      <!-- Tab panes -->
+      <div class="tab-content tabs_content tabs_content--products">
+        <div class="tabs_pane tabs_pane--active" id="tab-1">
+          <div class="block">
+            <img class="business-descr_img" src="https://farm5.staticflickr.com/4257/35375481351_581083ea18_h_d.jpg" alt="">
+            <h3 class="title--block">Our health assessments and reports deliver actionable data.</h3>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+  
+            <!-- Gallery Start -->
+            <div class="title title--ml title--blocked">Gallery</div>
+            <div class="gallery owl-carousel owl-theme">
+              <div class="gallery_item">
+                <a href="#" data-lity data-lity-desc="Photo of a clinic 1" data-lity-target="https://farm5.staticflickr.com/4257/35375481351_581083ea18_h_d.jpg">
+                  <img class="gallery_img" src="https://farm4.staticflickr.com/3319/3450142007_683670f0e5_m_d.jpg" alt="">
+                </a>
+                <p class="gallery_descr">Very long photo description so far</p>
+              </div>
+              <div class="gallery_item">
+                <a href="#" data-lity data-lity-desc="Photo of a clinic 2" data-lity-target="https://farm5.staticflickr.com/4212/35338950572_0057350e0a_h_d.jpg">
+                  <img class="gallery_img" src="https://farm5.staticflickr.com/4257/35375481351_48dd0ba1fa_m_d.jpg" alt="">
+                </a>
+                <p class="gallery_descr">Photo description 7</p>
+              </div>
+              <div class="gallery_item">
+                <a href="#" data-lity data-lity-desc="Photo of a clinic 3" data-lity-target="https://farm5.staticflickr.com/4215/35119743100_ac4e7a4c0b_h_d.jpg">
+                  <img class="gallery_img" src="https://farm5.staticflickr.com/4212/35338950572_91ec1aff98_m_d.jpg" alt="">
+                </a>
+                <p class="gallery_descr">Photo description 5</p>
+              </div>
+              <div class="gallery_item">
+                <a href="#" data-lity data-lity-desc="Photo of a clinic 4" data-lity-target="https://farm4.staticflickr.com/3211/3000167259_b8dfa80954_o_d.jpg">
+                  <img class="gallery_img" src="https://farm5.staticflickr.com/4215/35119743100_b3b058d086_m_d.jpg" alt="">
+                </a>
+                <p class="gallery_descr">Photo description 4</p>
+              </div>
+              <div class="gallery_item">
+                <a href="#" data-lity data-lity-desc="Photo of a clinic 5" data-lity-target="https://farm4.staticflickr.com/3592/3450952006_eb942e3c38_b_d.jpg">
+                  <img class="gallery_img" src="https://farm8.staticflickr.com/7006/6790902067_cc1231b5e1_m_d.jpg" alt="">
+                </a>
+                <p class="gallery_descr">Photo description 3</p>
+              </div>
+              <div class="gallery_item">
+                <a href="#" data-lity data-lity-desc="Photo of a clinic 6" data-lity-target="https://farm4.staticflickr.com/3582/3450959702_7c6d5981f7_b_d.jpg">
+                  <img class="gallery_img" src="https://farm4.staticflickr.com/3211/3000167259_06c991f638_m_d.jpg" alt="">
+                </a>
+                <p class="gallery_descr">Photo description 2</p>
+              </div>
+              <div class="gallery_item">
+                <a href="#" data-lity data-lity-desc="Photo of a clinic 7" data-lity-target="https://farm4.staticflickr.com/3319/3450142007_683670f0e5_b_d.jpg">
+                  <img class="gallery_img" src="https://farm4.staticflickr.com/3592/3450952006_eb942e3c38_m_d.jpg" alt="">
+                </a>
+                <p class="gallery_descr">Photo description 1</p>
+              </div> 
+            </div>
+            <!-- Gallery End -->
+            
+            <a href="#" class="btn btn--cart btn--lp">Visit Web Site</a>
+          </div>
+        </div>
+        <div class="tabs_pane" id="tab-2">
+          <div class="block">
+            <h3 class="title--block">I lived like a hermit for a week — and it revealed a scary reality<br>
+              For five days straight, I ordered all of my food via delivery apps.</h3>
+            <div>
+              <p>The Milton Family Care Centre operates as a family practice and walk in clinic. If you need a family doctor we are always accepting new patients! We have been serving Milton, ON and the surrounding areas for a number of years; caring for patients of all ages. Our friendly staff always meets our patients with a smile.</p>
+              <p>Milton Family Care Centre is committed to providing high quality, medical care in a clean and friendly environment with added convenience. Our clinic provides both Family Practice and Walk-In style medical service where patients can be treated by a qualified health care team. We understand our patients’ needs and treat all with care and respect.</p>
+            </div>
+            <a href="#" class="btn btn--cart btn--lp">Find out more</a>
+          </div>
+        </div>
+        <div class="tabs_pane" id="tab-3">
+          <div class="block">
+            <h3 class="title--block">Exercise most effective lifestyle choice for preventing dementia, researchers say<br>
+              Taking regular exercise is the most effective single lifestyle choice people can make to reduce their risk of dementia</h3>
+            <div>
+              <p>The onsite pharmacy provides prescription dispensing and consultation. For more information, call (905) 875-3600. The Superstore provides shopping opportunities for grocery, home and gift needs.</p>
+              <ul class="list-styled">
+                <li>Walk In Clinic - open to the public</li>
+                <li>Family Practice - accepting new patients!</li>
+                <li>Pharmacy on site</li>
+                <li>Newborn Check up</li>
+                <li>Vaccinations</li>
+                <li>Updating Vaccinations</li>
+                <li>Annual Exams</li>
+                <li>We have a Medical Lab on site, equipped with an ECG Computer System.</li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn--cart btn--lp">Find out more</a>
+          </div>
+        </div>
+        <div class="tabs_pane" id="tab-4">
+          <div class="events block">
+
+            <div class="events_item events_item--split">
+              <div class="events_img">
+                <a href="#"><img src="https://farm4.staticflickr.com/3319/3450142007_683670f0e5_m_d.jpg" alt=""></a>
+              </div>
+              <div class="events_meta">
+                <a href="#" class="title title--m">Women's Health & Fitness Expo</a>
+                <div class="title title--blocked title--s title--nopad">Sat, August 12, 2017</div>
+                <div class="event_descr">Inspiring women to stay healthy! The Women's Health & Fitness Expo is a premiere womens health event that features complimentary health screenings, fitness workshops, nutrition classes and more....Guests enjoy a day of fitness, fun and shopping all under one roof.</div>
+              </div>
+            </div>
+    
+            <div class="events_item events_item--split">
+              <div class="events_img">
+                <a href="#"><img src="https://farm5.staticflickr.com/4257/35375481351_48dd0ba1fa_m_d.jpg" alt=""></a>
+              </div>
+              <div class="events_meta">
+                <a href="#" class="title title--m">Ideas that change health care</a>
+                <div class="title title--blocked title--s title--nopad">Fri, 6 October, 2017</div>
+                <div class="event_descr">Ideas that change health care is a festival of ideas to inspire and challenge the future of health care.</div>
+              </div>
+            </div>
+    
+            <div class="events_item events_item--split">
+              <div class="events_meta">
+                <a href="#" class="title title--m">Practical Skills Seminar on Paediatric Food Allergy & Eczema for GPs</a>
+                <div class="title title--blocked title--s title--nopad">Tue, 10 October, 2017</div>
+                <div class="event_descr">The Allergy UK Masterclasses were a great success in 2016. Our expert speakers discussed the latest findings in the field of allergy, held interactive quizzes and workshops, and presented patient case studies, to help educate and support healthcare professionals in their continuing education of allergic disease.</div>
+              </div>
+            </div>
+    
+            <div class="events_item events_item--split">
+              <div class="events_img">
+                <a href="#"><img src="https://farm5.staticflickr.com/4215/35119743100_b3b058d086_m_d.jpg" alt=""></a>
+              </div>
+              <div class="events_meta">
+                <a href="#" class="title title--m">What’s the future of mental health care?</a>
+                <div class="title title--blocked title--s title--nopad">Thu, 28 September, 2017</div>
+                <div class="event_descr">Mental health problems are the leading cause of sickness absence in the UK, and 1 in 4 people will experience mental ill-health in their lifetime. What can we do to improve our mental health, and support that of others? In this public lecture, we look at innovative ways of supporting mental health care, in nursing and beyond: including nurse-led initiatives, peer support and advocacy.</div>
+              </div>
+            </div>
+    
+            <div class="events_item events_item--split">
+              <div class="events_img">
+                <a href="#"><img src="https://farm4.staticflickr.com/3211/3000167259_06c991f638_m_d.jpg" alt=""></a>
+              </div>
+              <div class="events_meta">
+                <a href="#" class="title title--m">SLSN 2017 Conference: Innovation, Collaboration & Evaluation</a>
+                <div class="title title--blocked title--s title--nopad">Fri, 22 September, 2017</div>
+                <div class="event_descr">This one day conference is aimed at health professionals who want to learn more about simulation-based training and how to apply innovation, collaboration & evaluation techniques to simulation based education.</div>
+              </div>
+            </div>
+    
+            <div class="events_item events_item--split">
+              <div class="events_img">
+                <a href="#"><img src="https://farm4.staticflickr.com/3592/3450952006_eb942e3c38_m_d.jpg" alt=""></a>
+              </div>
+              <div class="events_meta">
+                <a href="#" class="title title--m">Young People against Blood Cancer Nurse Study Day</a>
+                <div class="title title--blocked title--s title--nopad">Sat, 23 September, 2017</div>
+                <div class="event_descr">Our nurse study day brings together medical professionals working within haematology and haemato-oncology to listen to keynote speakers and explore interesting topics. This nurse study day will cover the care of a Teenage and Young Adult as well as stem cell transplants, the psychological impact of a blood cancer diagnosis and sexuality, fertility and relationships.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="tabs_pane" id="tab-5">
+          <div class="block">
+            <div class="videos">
+
+              <div class="videos_item">
+                <div class="responsive-embed">
+                  <iframe src="https://www.youtube.com/embed/nNbmNuzIO98" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                <p class="gallery_descr">Ujala is a certified chiropodist who graduated with a B.A. from McMaster University</p>
+              </div>
+              <div class="videos_item">
+                <div class="responsive-embed">
+                  <iframe src="https://www.youtube.com/embed/nNbmNuzIO98" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                <p class="gallery_descr">Write your video description here</p>
+              </div>
+              <div class="videos_item">
+                <div class="responsive-embed">
+                  <iframe src="https://www.youtube.com/embed/nNbmNuzIO98" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                <p class="gallery_descr">Write your video description here</p>
+              </div>
+              <div class="videos_item">
+                <div class="responsive-embed">
+                  <iframe src="https://www.youtube.com/embed/nNbmNuzIO98" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                <p class="gallery_descr">Write your video description here</p>
+              </div>
+              <div class="videos_item">
+                <div class="responsive-embed">
+                  <iframe src="https://www.youtube.com/embed/nNbmNuzIO98" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                <p class="gallery_descr">Write your video description here</p>
+              </div>
+              <div class="videos_item">
+                <div class="responsive-embed">
+                  <iframe src="https://www.youtube.com/embed/nNbmNuzIO98" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                <p class="gallery_descr">When the power goes out, a generator can keep your house warm (or cool), your kitchen cooking, and your computers and phones charging</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="tabs_pane" id="tab-6">
+          <div class="block">
+            <p>
+              We are conveniently located on the main level, inside the Superstore on Main Street East in Milton, ON. The on-site DRUGStore pharmacy provides expert advice and services to our patients. 
+            </p>
+            <p>Many other amenities are also provided on-site including:</p>
+            <ul class="list-styled">
+              <li>Handicapped Accessibility</li>
+              <li>Pharmacy</li>
+              <li>Grocery</li>
+              <li>Free parking</li>
+            </ul>
+            <h3 class="title title--ml title--blocked">Contacts</h3>
+            <div>
+              <div class="contacts">
+                <div class="contacts_item">
+                  <svg>
+                    <use xlink:href="img/icons.svg#phone"/>
+                  </svg>
+                  <span class="highlight--green">Telephone: </span>
+                  (905) 864-9898
+                </div>
+                <div class="contacts_item">
+                  <svg>
+                    <use xlink:href="img/icons.svg#phone"/>
+                  </svg>
+                  <span class="highlight--green">Fax: </span>
+                  (905) 864-9393
+                </div>
+                <div class="contacts_item">
+                  <svg>
+                    <use xlink:href="img/icons.svg#mark"/>
+                  </svg>
+                  <span class="highlight--green">Address: </span>
+                  820 Main Street East, Milton, ON L9T 0J4
+                </div>
+                <div class="contacts_item">
+                  <svg>
+                    <use xlink:href="img/icons.svg#mark"/>
+                  </svg>
+                  <span class="highlight--green">Closest Intersection: </span>
+                  Main Street East and Thompson Road South
+                </div>
+                <div class="contacts_item">
+                  <svg>
+                    <use xlink:href="img/icons.svg#mark"/>
+                  </svg>
+                  <span class="highlight--green">Closest Landmark: </span>
+                  Inside the Real Canadian Superstore on the ground level
+                </div>
+              </div>
+            </div>
+            <h3 class="title title--ml title--blocked">Leave a Message for Us</h3>
+            <form>
+              <div class="input">
+                <label for="name">Your Name <sup>*</sup></label>
+                <input type="text" name="name" id="name" placeholder="John" required="">
+              </div>
+              <div class="input">
+                <label for="phone">Contact Phone <sup>*</sup></label>
+                <input type="tel" name="phone" id="phone" placeholder="+1 0000 000" required="">
+              </div>
+              <div class="input">
+                <label for="email">Email <sup>*</sup></label>
+                <input type="email" name="email" id="email" placeholder="your@mail.com" required="">
+              </div>
+              <div class="textarea">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="3" placeholder="Your message"></textarea>
+              </div>
+              <button class="btn btn--lp">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business Sidebar -->
+    <div class="block block--sidebar">
+
+      <div class="verified">
+        <img class="verified_img" src="img/icon/verified.png" alt="Healthviber verified">
+      </div>
+      
+      <div class="title title--ml title--blocked">Contacts</div>
+      <div class="contacts">
+        <div class="contacts_item">
+          <svg>
+            <use xlink:href="img/icons.svg#phone"/>
+          </svg>
+          +1 (773) 382-0211
+        </div>
+        <div class="contacts_item">
+          <svg>
+            <use xlink:href="img/icons.svg#mark"/>
+          </svg>
+          3029 E 92nd St, Chicago, IL 60617 United States
+        </div>
+        <div class="contacts_item">
+          <svg>
+            <use xlink:href="img/icons.svg#suitcase"/>
+          </svg>
+          <a href="#" target="_blank" class="link link--simple">access.us</a>
+        </div>
+      </div>
+
+      <div class="title title--ml title--blocked">Working Hours</div>
+      <!-- Working Hours Start -->
+      <div class="hours">
+    
+        <div class="hours_item">
+          <div class="hours_day">Sunday</div>
+          <div class="hours_time time">
+            <div class="time_from">08:00 <span class="time_mid">am</span></div>
+            <div class="time_to">04:00 <span class="time_mid">pm</span></div>
+          </div>
+        </div>
+        <div class="hours_item hours_item--active">
+          <div class="hours_day">Monday</div>
+          <div class="hours_time time">
+            <div class="time_from">08:00 <span class="time_mid">am</span></div>
+            <div class="time_to">04:00 <span class="time_mid">pm</span></div>
+          </div>
+        </div>
+        <div class="hours_item">
+          <div class="hours_day">Tuesday</div>
+          <div class="hours_time time">
+            <div class="time_from">08:00 <span class="time_mid">am</span></div>
+            <div class="time_to">04:00 <span class="time_mid">pm</span></div>
+          </div>
+        </div>
+        <div class="hours_item">
+          <div class="hours_day">Wednesday</div>
+          <div class="hours_time time">
+            <div class="time_from">08:00 <span class="time_mid">am</span></div>
+            <div class="time_to">04:00 <span class="time_mid">pm</span></div>
+          </div>
+        </div>
+        <div class="hours_item">
+          <div class="hours_day">Thursday</div>
+          <div class="hours_time time">
+            <div class="time_from">08:00 <span class="time_mid">am</span></div>
+            <div class="time_to">04:00 <span class="time_mid">pm</span></div>
+          </div>
+        </div>
+        <div class="hours_item">
+          <div class="hours_day">Friday</div>
+          <div class="hours_time time">
+            <div class="time_from">08:00 <span class="time_mid">am</span></div>
+            <div class="time_to">04:00 <span class="time_mid">pm</span></div>
+          </div>
+        </div>
+    
+      </div>
+      <!-- Working Hours End -->
+
+      <hr>
+
+      <a href="#" class="btn btn--buy btn--lp btn--full">Report Errors &amp; Abuse</a>
+    </div>
+    <!-- Business Sidebar END -->
+
+  </div>
+  <!-- Business Description END -->
+
+  <div class="container">
+    <h2 class="title">
+      Reviews
+    </h2>
+    <div class="block block--nomargin">
+      <div class="reviews">
+
+        <div class="reviews_item">
+          <div class="reviews_photo">
+            <img src="img/user.jpg" alt="">
+            <div class="rating rating--read-only" data-rating="2"></div>
+          </div>
+          <div class="reviews_details">
+            <div class="reviews_name">Peter Merholz</div>
+            <div class="reviews_date">2 hours ago</div>
+            <div class="reviews_text">Ujala is a certified chiropodist who graduated with a B.A. from McMaster University in Biological Anthropology and then went on to attend The Michener Institute of Applied Health Sciences where she received her advanced diploma of Health Sciences in Podiatric Medicine.</div>
+          </div>
+        </div>
+        <div class="reviews_item">
+          <div class="reviews_photo">
+            <img src="img/user2.jpg" alt="">
+            <div class="rating rating--read-only" data-rating="5"></div>
+          </div>
+          <div class="reviews_details">
+            <div class="reviews_name">Eddie Young</div>
+            <div class="reviews_date">3 hours ago</div>
+            <div class="reviews_text">When the power goes out, a generator can keep your house warm (or cool), your kitchen cooking, and your computers and phones charging. Sales spike around major storms—just before and a few weeks after—which means that too many buyers shop when the power’s out, randomly choosing a generator that looks up to the task, and then have no idea what to do with it when they get it home.</div>
+          </div>
+        </div>
+        <div class="reviews_item">
+          <div class="reviews_photo">
+            <img src="img/user3.jpg" alt="">
+          </div>
+          <div class="reviews_details">
+            <div class="reviews_name">Zack Onisko</div>
+            <div class="reviews_date">5 hours ago</div>
+            <div class="reviews_text">I just went through a TSA checkpoint at SFO and didn't need to remove my laptop or shoes. It was a glorious moment!</div>
+          </div>
+        </div>
+        <div class="reviews_item">
+          <div class="reviews_photo">
+            <img src="img/user4.jpg" alt="">
+            <div class="rating rating--read-only" data-rating="5"></div>
+          </div>
+          <div class="reviews_details">
+            <div class="reviews_name">John Fisher</div>
+            <div class="reviews_date">9 hours ago</div>
+            <div class="reviews_text">Given the science, it seems more likely that it should remain (to keep my MBR stable), but the idea being fasting uses reserves for longer</div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="title title--ml title--blocked">Leave a Review</div>
+      <form class="review-form">
+        <div class="input">
+          <label for="">Choose a Rating</label>
+          <div class="rating rating--review rating--input rating--short" data-rating="3"></div>
+        </div>
+        <div class="input">
+          <label for="revname">Your Name <sup>*</sup></label>
+          <input type="text" name="revname" id="revname" placeholder="John" required="">
+        </div>
+        <div class="input">
+          <label for="revemail">Email <sup>*</sup></label>
+          <input type="email" name="revemail" id="revemail" placeholder="your@mail.com" required="">
+        </div>
+        <div class="textarea">
+          <label for="revmessage">Review</label>
+          <textarea name="revmessage" id="revmessage" rows="3" placeholder="Your message"></textarea>
+        </div>
+        <button class="btn btn--lp">Send message</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="title">
+      Similar Clinics Nearby
+    </h2>
+    <div class="products-list products-list--4 products-list--border4 block block--nopadding block--nomargin">
+
+      <div class="product">
+        <div class="product_image">
+          <a href="#">
+            <img src="https://farm4.staticflickr.com/3592/3450952006_eb942e3c38_b_d.jpg" alt="">
+          </a>
+        </div>
+        <div class="product_title product_title--large">
+          <a href="#">
+              Memorial Physician Services - Koke Mill
+          </a>
+        </div>
+        <div class="product_attributes">
+          <div class="rating rating--read-only rating--short" data-rating="2"></div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product_image">
+          <a href="#">
+            <img src="https://farm4.staticflickr.com/3211/3000167259_b8dfa80954_o_d.jpg" alt="">
+          </a>
+        </div>
+        <div class="product_title product_title--large">
+          <a href="#">
+              Grundy County Health Department
+          </a>
+        </div>
+        <div class="product_attributes">
+          <div class="rating rating--read-only rating--short" data-rating="3"></div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product_image">
+          <a href="#">
+            <img src="https://farm5.staticflickr.com/4215/35119743100_ac4e7a4c0b_h_d.jpg" alt="">
+          </a>
+        </div>
+        <div class="product_title product_title--large">
+          <a href="#">
+              Edgar Medical Clinic - Mary Lanning Healthcare
+          </a>
+        </div>
+        <div class="product_attributes">
+          <div class="rating rating--read-only rating--short" data-rating="4"></div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product_image">
+          <a href="#">
+            <img src="https://farm5.staticflickr.com/4212/35338950572_0057350e0a_h_d.jpg" alt="">
+          </a>
+        </div>
+        <div class="product_title product_title--large">
+          <a href="#">
+              Paris Health Care Clinic - MedChoice Clinics - AMC
+          </a>
+        </div>
+        <div class="product_attributes">
+          <div class="rating rating--read-only rating--short" data-rating="5"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-container container">
+      <div class="footer_block footer_block--small">
+        <h3 class="footer_header">Information</h3>
+        <ul class="footer_list">
+          <li class="footer_link"><a href="#">About Us</a></li>
+          <li class="footer_link"><a href="#">Contact Us</a></li>
+          <li class="footer_link"><a href="#">Return Policy</a></li>
+          <li class="footer_link"><a href="#">Refund Policy</a></li>
+          <li class="footer_link"><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer_block footer_block--small">
+        <h3 class="footer_header">Our offers</h3>
+        <ul class="footer_list">
+          <li class="footer_link"><a href="#">New Arrivals</a></li>
+          <li class="footer_link"><a href="#">Special Offers</a></li>
+          <li class="footer_link"><a href="#">Top Sellers</a></li>
+          <li class="footer_link"><a href="#">Manufacturers</a></li>
+        </ul>
+      </div>
+      <div class="footer_block footer_block--small">
+        <h3 class="footer_header">My account</h3>
+        <ul class="footer_list">
+          <li class="footer_link"><a href="#">My Account</a></li>
+          <li class="footer_link"><a href="#">Privacy Policy</a></li>
+          <li class="footer_link"><a href="#">Terms & Conditions</a></li>
+          <li class="footer_link"><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      <div class="footer_block footer_block--wide">
+        <h3 class="footer_header">Contact Us</h3>
+        <div class="contacts">
+          <div class="contacts_item">
+            <svg>
+              <use xlink:href="img/icons.svg#phone"/>
+            </svg>
+            <span class="highlight--green">Call us now: </span>
+            +1 (773) 382-0211
+          </div>
+          <div class="contacts_item">
+            <svg>
+              <use xlink:href="img/icons.svg#mark"/>
+            </svg>
+            3029 E 92nd St, Chicago, IL 60617 United States
+          </div>
+        </div>
+        <div class="social social--footer">
+          <a href="#" class="social_item social_item--fb">
+            <svg>
+              <use xlink:href="img/icons.svg#soc-facebook"/>
+            </svg>
+          </a>
+          <a href="#" class="social_item social_item--pi">
+            <svg>
+              <use xlink:href="img/icons.svg#soc-pinterest"/>
+            </svg>
+          </a>
+          <a href="#" class="social_item social_item--tw">
+            <svg>
+              <use xlink:href="img/icons.svg#soc-twitter"/>
+            </svg>
+          </a>
+          <a href="#" class="social_item social_item--yt">
+            <svg>
+              <use xlink:href="img/icons.svg#soc-youtube"/>
+            </svg>
+          </a>
+          <a href="#" class="social_item social_item--in">
+            <svg>
+              <use xlink:href="img/icons.svg#soc-linkedin"/>
+            </svg>
+          </a>
+        </div>
+        <div class="subscribe">
+          <form class="subscribe_form" action="#">
+            <input class="subscribe_input" type="email" placeholder="Your email" required="">
+            <button class="subscribe_submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyrights">
+      <div class="container copyrights-wrapper">
+        <div class="copyrights_copy">&copy; 2017 Healthviber. All Rights Reserved</div>
+        <div class="copyrights_payments">
+          <img src="img/icon/payments3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3krncQQR7IJIknwUcqMlsAVO1ZHepTDE&callback=initMap"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/app.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/lity.min.js"></script>
+
+</body>
+</html>
