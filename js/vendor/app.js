@@ -144,7 +144,7 @@ $(function() {
         }
       }
     });
-    //#endregion
+  //#endregion
 
   //#region Form send and messages Start
   var formMessage = function(message, type) {
@@ -168,14 +168,14 @@ $(function() {
 
     $container.empty().append(content);
     setTimeout(function() {
-      $container.find('.form_message').addClass('showing');
+      $container.find('.form_message').addClass('form_message--is-showing');
     }, 100);
   };
 
   var formHide = function() {
     $('.contacts-form_inner')
-      .removeClass('hiding')
-      .addClass('hidden');
+      .removeClass('form_message--is-hiding')
+      .addClass('form_message--is-hidden');
   };
 
   $('#contact-form').submit(function(e) {
@@ -201,5 +201,4 @@ $(function() {
       });
   });
   //#endregion
-
 });
