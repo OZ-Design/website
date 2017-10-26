@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>LogosCargo | Tracking, Shipping, and Locations</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" media="(max-width: 748px)" href="css/styles-mobile.css" />
+  <link rel="stylesheet" media="(min-width: 749px) and (max-width: 1199px)" href="css/styles-tablet.css" />
+  <link rel="stylesheet" media="(min-width: 1200px)" href="css/styles.css" />
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#1d1d1d">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#2b5797">
+</head>
+
+<body id="top">
+
+  <header class="header container">
+    <div class="header_logo">
+      <a href="/" title="Go to homepage">
+        <svg class="logo" alt="logoscargo logo" title="Go to homepage">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#logo-color"></use>
+        </svg>
+      </a>
+    </div>
+    <div data-target="#js-mobile-menu" class="header_menu-button button button--small button--invert js-menu-toggle"><span>Menu</span></div>
+    <div class="header_menu">
+      <!--================================
+      =                Menu              =
+      =================================-->
+      <ul class="main-menu">
+        <li class="main-menu_item link link--invert"><a href="about.html">About Us</a></li>
+        <li class="main-menu_item link link--invert"><a href="team.html">Team</a></li>
+        <li class="main-menu_item link link--invert"><a href="news.html">News</a></li>
+        <li class="main-menu_item link link--invert"><a href="faq.html">FAQ</a></li>
+        <li class="main-menu_item link link--invert"><a href="contacts.html">Contacts</a></li>
+        <li class="main-menu_item"><a class="button button--invert" href="#modal-tracking" data-lity><span>Track</span></a></li>
+      </ul>
+      <!--====  End of Menu  ====-->
+    </div>
+  </header>
+
+  <!--================================
+  =           Mobile Menu            =
+  =================================-->
+  <ul id="js-mobile-menu" class="main-menu main-menu--mobile">
+    <li class="main-menu_item link link--invert"><a href="about.html">About Us</a></li>
+    <li class="main-menu_item link link--invert"><a href="team.html">Team</a></li>
+    <li class="main-menu_item link link--invert"><a href="news.html">News</a></li>
+    <li class="main-menu_item link link--invert"><a href="faq.html">FAQ</a></li>
+    <li class="main-menu_item link link--invert"><a href="contacts.html">Contacts</a></li>
+    <li class="main-menu_item"><a class="button button--invert" href="#modal-tracking" data-lity><span>Track</span></a></li>
+  </ul>
+  <!--====  End of Mobile Menu  ====-->
+
+  <div class="hero">
+    <div class="hero_content container">
+      <div class="text--biggest">
+        LogosCargo<br>
+        Tracking, Shipping, and Locations
+      </div>
+      <a href="#modal-order" class="button button--invert button--extra-large" data-lity><span>Request shipping</span></a>
+    </div>
+    <div class="hero_bg hero_bg--dark">
+      <div class="hero_bg-img" style="background-image: url('img/header/home.jpg');"></div>
+    </div>
+  </div>
+
+  <div class="subhero">
+    <div class="subhero_before"></div>
+    <div class="subhero_inner">
+      
+      <div class="grid-4 container">
+
+        <a href="service-dev.html" class="card">
+          <div class="card_top card_top--s">
+            <div class="card_icon">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#forlift"></use></svg>
+            </div>
+            <div class="card_title">Production<br> Deployment</div>
+          </div>
+          <div class="card_img">
+            <img src="img/services/dev.jpg" alt="">
+          </div>
+        </a>
+
+        <a href="service-tour.html" class="card">
+          <div class="card_top card_top--s">
+            <div class="card_icon">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#helictopter"></use></svg>
+            </div>
+            <div class="card_title">Furniture<br> Tours</div>
+          </div>
+          <div class="card_img">
+            <img src="img/services/heli.jpg" alt="">
+          </div>
+        </a>
+
+        <a href="service-collect.html" class="card">
+          <div class="card_top card_top--s">
+            <div class="card_icon">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#truck"></use></svg>
+            </div>
+            <div class="card_title">Collected<br> Cargoes</div>
+          </div>
+          <div class="card_img">
+            <img src="img/services/truck.jpg" alt="">
+          </div>
+        </a>
+
+        <a href="service-container.html" class="card">
+          <div class="card_top card_top--s">
+            <div class="card_icon">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#ship"></use></svg>
+            </div>
+            <div class="card_title">Container<br> Transport</div>
+          </div>
+          <div class="card_img">
+            <img src="img/services/ship.jpg" alt="">
+          </div>
+        </a>
+
+      </div>
+
+      <div class="tabs container--tight">
+        <ul class="tabs_nav">
+          <li class="tabs_link tabs_link--active" data-tab="#tab-1"><a href="#tab-1">About Us</a></li>
+          <li class="tabs_link" data-tab="#tab-2"><a href="#tab-2">Services</a></li>
+          <li class="tabs_link" data-tab="#tab-3"><a href="#tab-3">Our Benefits</a></li>
+        </ul>
+        <div class="tabs_wrapper">
+          <div class="tabs_content tabs_content--active" id="tab-1">
+            <p>Connecting people with goods, services and ideas creates opportunities and improves lives. At FedEx, we believe that a connected world is a better world, and that belief guides everything we do.</p>
+            <p>A more connected world means more opportunities. That’s why customers count on our diverse portfolio of transportation, e-commerce, and business solutions.</p>
+          </div>
+          <div class="tabs_content" id="tab-2">
+            <p>Our air, ground and sea networks cover more than 220 countries and territories, linking more than 99 percent of the world’s GDP.</p>
+            <p>In a connected world, the power of technology, transportation, information, and ideas compounds and multiplies.</p>
+            <p>Businesses big and small create jobs that lift their communities. For people who are hungry for the education, goods, services and jobs that can improve their lives, a connected world is a better world.</p>
+          </div>
+          <div class="tabs_content" id="tab-3">
+            <p>We are consistently ranked among the world’s most admired brands and employers. More than 400,000 FedEx team members are absolutely, positively focused on safety, the highest ethical and professional standards, and the needs of our customers and communities.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="subhero_after"></div>
+  </div>
+
+  <div class="container">
+
+    <div class="media-block">
+      <div class="media-block_img">
+        <img alt="" class="js-media-block" src="img/media.jpg">
+        <div class="media-block_img-background"></div>
+      </div>
+      <div class="media-block_content">
+        <div class="h3-like"><span class="highlight">LogosCargo Express</span> offers fast, economical delivery</div>
+        <div class="media-block_text">
+          <ul class="list">
+            <li>Air freight forwarding. We connect major global markets — inbound and
+                outbound, intercontinental and inter-regional;</li>
+            <li>Ocean freight forwarding. Our portfolio offers flexibility, reliable delivery,
+                and fast end-to-end distribution in major markets and trade lanes;</li>
+            <li>Customs brokerage. As one of the largest-volume customs entry filers
+                in North America with coordination capabilities around the globe, we can
+                speed shipments through customs;</li>
+            <li>Trade & Customs Advisory Services. We help customers navigate
+                complex international trade rules and procedures to efficiently achieve
+                regulatory compliance.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container--tight">
+      <div data-videoid="NVO7bzHpLpE" data-image="img/video.jpg" class="video-embed"></div>
+    </div>
+       
+  </div>
+
+  <blockquote class="blockquote">
+    <div class="container">
+      <div class="blockquote_wrapper">
+        <div class="blockquote_icon">
+          <svg><use xlink:href="img/icons.svg#quote" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+        </div>
+    
+        <div class="blockquote_content">
+          <p>Connecting people with goods, services, ideas and
+            technologies creates opportunities. Opportunities that
+            build jobs, generate prosperity and lift communities to
+            higher standards of living.</p>
+        </div>
+      </div>
+    </div>
+  </blockquote>
+
+  <div class="block-text">
+    <div class="h3-like"><span class="highlight">LogosCargo Express</span> connects the world</div>
+    <p>The service that started it all has exponentially expanded our customers’
+        access to the world. We now connect to 99 percent of the world’s gross
+        domestic product (GDP), shipping packages and freight with services
+        ranging from same-day to three-business-day delivery</p>
+    <p>Whether customers need a part delivered overseas first thing the next
+        morning or a package delivered across town on Saturday, we’ve got it
+        covered. Our powerhouse global network provides reliable, time-sensitive
+        and competitively superior integrated express transportation services to
+        more than 220 countries and territories and to every address in the U.S.
+        In addition to a full portfolio of intercontinental air express services.</p>
+  </div>
+
+  <div class="partners">
+    <div class="container">
+      <a href="#" class="partners_item" target="_blank">
+        <img src="img/partners.png" alt="partner" class="partners_img"></a>
+      <a href="#" class="partners_item" target="_blank">
+        <img src="img/partners.png" alt="partner" class="partners_img"></a>
+      <a href="#" class="partners_item" target="_blank">
+        <img src="img/partners.png" alt="partner" class="partners_img"></a>
+      <a href="#" class="partners_item" target="_blank">
+        <img src="img/partners.png" alt="partner" class="partners_img"></a>
+      <a href="#" class="partners_item" target="_blank">
+        <img src="img/partners.png" alt="partner" class="partners_img"></a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+
+      <div class="footer_column footer_column--bottom">
+
+        <div class="footer_copy">
+          <svg class="logo logo--footer" alt="logoscargo logo">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#logo-white"></use>
+          </svg>
+        </div>
+
+        <div class="footer_menu">
+          <a class="link link--invert" href="about.html">About Us</a>
+          <a class="link link--invert" href="contacts.html">Contacts</a>
+          <a class="link link--invert" href="policy.html">Policy</a>
+          <a class="link link--invert" href="#top">Go Top</a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <div id="modal-order" class="lity-hide modal">
+    <h3 style="text-align:center;">Shipping request</h3>
+    <form id="contact-form" class="form" name="Contacts">
+      <div class="form_input">
+        <label for="name">Your name</label>
+        <input id="name" type="text" name="name" required="">
+      </div>
+      <div class="form_input">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required="">
+      </div>
+      <div class="form_input">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" cols="50" rows="5" required=""></textarea>
+      </div>
+      <button class="button form_button">
+        <span>Send</span>
+      </button>
+    </form>
+  </div>
+
+  <div id="modal-tracking" class="lity-hide modal">
+    <h3 style="text-align:center;">Track shipping</h3>
+    <div id="js-tracking_output"></div>
+    <form id="contact-form" class="form" name="Tracking">
+      <div class="form_input">
+        <label for="js-tracking_input">Tracking number</label>
+        <input id="js-tracking_input" type="text" name="name" required="" value="12345678">
+      </div>
+      <button id="js-tracking_submit" class="button form_button">
+        <span>Track</span>
+      </button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="js/app.package.js"></script>
+
+</body>
+
+</html>

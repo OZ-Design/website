@@ -1117,6 +1117,10 @@ blockquote > cite {
     transform: scale(1.1);
   }
 
+  .media--dark > .media_overlay {
+    opacity: 0.8;
+  }
+
   .media_descr {
     padding: 40px;
   }

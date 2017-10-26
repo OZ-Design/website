@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="16px" viewBox="0 0 23 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow_up</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="arrow_up" transform="translate(11.485281, 10.485281) rotate(-135.000000) translate(-11.485281, -10.485281) translate(5.485281, 4.485281)" stroke="#D0011B" stroke-width="5">
+            <path d="M10.2857143,10.6071429 L0.530330086,10.6071429" id="Line"></path>
+            <path d="M10.2857143,10.5 L10.2857143,1.70530257e-12" id="Line-Copy"></path>
+        </g>
+    </g>
+</svg>
