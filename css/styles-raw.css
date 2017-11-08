@@ -461,7 +461,7 @@ blockquote > cite {
   display: inline-block;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   h1,
   .h1-like {
     font-size: 34px;
@@ -524,7 +524,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   h1,
   .h1-like {
     font-size: 64px;
@@ -674,7 +674,7 @@ blockquote > cite {
   margin: 16px auto;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .grid-2 {
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
@@ -682,7 +682,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .grid-2 {
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
@@ -884,7 +884,7 @@ blockquote > cite {
   font-weight: 600;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .button {
     padding: 6px 22px;
     font-size: 16px;
@@ -907,7 +907,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .button--extra-large {
     font-size: 32px;
   }
@@ -981,7 +981,7 @@ blockquote > cite {
   transition: 0.3s;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .header_menu {
     margin-top: 0;
   }
@@ -1104,7 +1104,7 @@ blockquote > cite {
   transform: translateY(0);
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .media > .media_overlay {
     opacity: 0;
   }
@@ -1157,7 +1157,7 @@ blockquote > cite {
   line-height: 1.2;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .feature {
     padding: 16px;
   }
@@ -1173,7 +1173,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .feature {
     padding: 32px;
   }
@@ -1210,7 +1210,7 @@ blockquote > cite {
   margin-top: 8px;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .text-block {
     padding: 0 16px;
     max-width: 600px;
@@ -1226,7 +1226,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .text-block {
     max-width: 800px;
     margin: 40px auto;
@@ -1328,13 +1328,13 @@ blockquote > cite {
   transform: translate(0, 0);
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .case_item {
     padding: 16px;
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .case_item {
     padding: 32px;
   }
@@ -1454,7 +1454,7 @@ blockquote > cite {
   bottom: 0;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .case-simple {
     margin: 16px 0;
     padding: 0 16px;
@@ -1472,7 +1472,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .case-simple {
     margin: 40px 0;
   }
@@ -1541,7 +1541,7 @@ blockquote > cite {
   font-size: 14px;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .case-more {
     padding: 16px;
   }
@@ -1556,7 +1556,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .case-more {
     margin: 32px 0;
   }
@@ -1692,7 +1692,7 @@ blockquote > cite {
   z-index: 1;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .slider {
     width: 100%;
     height: 400px;
@@ -1713,7 +1713,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .slider {
     height: 600px;
     margin: 40px auto;
@@ -1803,7 +1803,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .slider {
     padding: 0;
   }
@@ -1922,13 +1922,13 @@ blockquote > cite {
   overflow: hidden;
   fill: #333;
 }
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .video-embed {
     margin: 32px auto;
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .video-embed {
     margin: 40px auto;
   }
@@ -1963,7 +1963,7 @@ blockquote > cite {
   text-decoration: underline;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .triggers_item {
     margin: 8px;
     padding: 16px;
@@ -1974,7 +1974,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .triggers {
     flex-wrap: nowrap;
     margin: 40px -16px;
@@ -2021,7 +2021,7 @@ blockquote > cite {
   margin: 0 auto;
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   #preview.slider {
     width: 380px;
   }
@@ -2054,7 +2054,7 @@ blockquote > cite {
   width: 160px;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .header {
     flex-flow: row;
     align-items: flex-end;
@@ -2064,7 +2064,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .header {
     margin-top: 40px;
     min-height: 54px;
@@ -2172,7 +2172,7 @@ blockquote > cite {
   z-index: 2;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .hero {
     margin-top: -70px;
     padding-top: 70px;
@@ -2225,7 +2225,7 @@ blockquote > cite {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .hero {
     padding-top: 126px;
     margin-top: -126px;
@@ -2394,7 +2394,7 @@ footer {
   margin: 16px 0;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .footer_column {
     padding: 0 16px;
   }
@@ -2404,7 +2404,7 @@ footer {
   }
 }
 
-@media (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   footer {
     padding: 80px 0;
   }
@@ -2569,7 +2569,7 @@ textarea {
   height: auto;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .form_message {
     padding: 12px 16px;
     margin: 16px 0;
@@ -2619,7 +2619,7 @@ textarea {
   display: inline;
 }
 
-@media (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .preview {
     margin: 32px auto;
   }

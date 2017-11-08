@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Collected Cargoes | LogosCargo</title>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/vendor.css" />
-  <link rel="stylesheet" media="(max-width: 748px)" href="css/styles-mobile.css" />
-  <link rel="stylesheet" media="(min-width: 749px) and (max-width: 1199px)" href="css/styles-tablet.css" />
-  <link rel="stylesheet" media="(min-width: 1200px)" href="css/styles.css" />
-  <link rel="shortcut icon" href="img/favicon/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="img/favicon/manifest.json">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#1d1d1d">
+  <link href="css/vendor.css" rel="stylesheet">
+  <link href="css/styles-mobile.css" rel="stylesheet" media="(max-width: 748px)">
+  <link href="css/styles-tablet.css" rel="stylesheet" media="(min-width: 749px) and (max-width: 1199px)">
+  <link href="css/styles.css" rel="stylesheet" media="(min-width: 1200px)">
+  <link href="img/favicon/favicon.ico" rel="shortcut icon">
+  <link type="image/png" href="img/favicon/favicon-32x32.png" rel="icon" sizes="32x32">
+  <link type="image/png" href="img/favicon/favicon-16x16.png" rel="icon" sizes="16x16">
+  <link href="img/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="img/favicon/manifest.json" rel="manifest">
+  <link href="img/favicon/safari-pinned-tab.svg" rel="mask-icon" color="#1d1d1d">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
   <meta name="theme-color" content="#2b5797">
@@ -26,12 +26,12 @@
   <header class="header container">
     <div class="header_logo">
       <a href="/" title="Go to homepage">
-        <svg class="logo" alt="logoscargo logo" title="Go to homepage">
+        <svg class="logo" title="Go to homepage" alt="logoscargo logo">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#logo-color"></use>
         </svg>
       </a>
     </div>
-    <div data-target="#js-mobile-menu" class="header_menu-button button button--small button--invert js-menu-toggle"><span>Menu</span></div>
+    <div class="header_menu-button button button--small button--invert js-menu-toggle" data-target="#js-mobile-menu"><span>Menu</span></div>
     <div class="header_menu">
       <!--================================
       =                Menu              =
@@ -42,7 +42,7 @@
         <li class="main-menu_item link link--invert"><a href="news.html">News</a></li>
         <li class="main-menu_item link link--invert"><a href="faq.html">FAQ</a></li>
         <li class="main-menu_item link link--invert"><a href="contacts.html">Contacts</a></li>
-        <li class="main-menu_item"><a class="button button--invert" href="#modal-tracking" data-lity><span>Track</span></a></li>
+        <li class="main-menu_item"><a class="button button--invert" data-lity href="#modal-tracking"><span>Track</span></a></li>
       </ul>
       <!--====  End of Menu  ====-->
     </div>
@@ -51,13 +51,13 @@
   <!--================================
   =           Mobile Menu            =
   =================================-->
-  <ul id="js-mobile-menu" class="main-menu main-menu--mobile">
+  <ul class="main-menu main-menu--mobile" id="js-mobile-menu">
     <li class="main-menu_item link link--invert"><a href="about.html">About Us</a></li>
     <li class="main-menu_item link link--invert"><a href="team.html">Team</a></li>
     <li class="main-menu_item link link--invert"><a href="news.html">News</a></li>
     <li class="main-menu_item link link--invert"><a href="faq.html">FAQ</a></li>
     <li class="main-menu_item link link--invert"><a href="contacts.html">Contacts</a></li>
-    <li class="main-menu_item"><a class="button button--invert" href="#modal-tracking" data-lity><span>Track</span></a></li>
+    <li class="main-menu_item"><a class="button button--invert" data-lity href="#modal-tracking"><span>Track</span></a></li>
   </ul>
   <!--====  End of Mobile Menu  ====-->
 
@@ -104,7 +104,7 @@
         drop counts.</p>
 
     <div class="container--tight">
-      <div data-videoid="NVO7bzHpLpE" data-image="img/video.jpg" class="video-embed"></div>   
+      <div class="video-embed" data-image="img/video.jpg" data-videoid="NVO7bzHpLpE"></div>   
     </div>
 
     <blockquote class="blockquote blockquote--inner">
@@ -144,7 +144,7 @@
         to step into leadership roles, we can ensure our workforce reflects the increasing
         diversity and complexity of our customers and communities.</p>
 
-    <img src="img/about-office.jpg" alt="">
+    <img src="img/about-office.jpg" alt>
 
     <h3>What <span class="highlight">LogosCargo</span> stand for:</h3>
     <div class="list-split">
@@ -220,22 +220,21 @@
     </div>
   </footer>
 
-  <div id="modal-tracking" class="lity-hide modal">
+  <div class="lity-hide modal" id="modal-tracking">
     <h3 style="text-align:center;">Track shipping</h3>
     <div id="js-tracking_output"></div>
-    <form id="contact-form" class="form" name="Tracking">
+    <form class="form" id="contact-form" name="Tracking">
       <div class="form_input">
         <label for="js-tracking_input">Tracking number</label>
-        <input id="js-tracking_input" type="text" name="name" required="" value="12345678">
+        <input id="js-tracking_input" name="name" type="text" required value="12345678">
       </div>
-      <button id="js-tracking_submit" class="button form_button">
+      <button class="button form_button" id="js-tracking_submit">
         <span>Track</span>
       </button>
     </form>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="js/app.package.js"></script>
 
 </body>
