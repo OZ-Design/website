@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Удалено | BeTab расширение для новой вкладки</title>
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+
+<body class="center-all">
+  <!-- #region Form -->
+  <main class="form">
+    <div class="form__brand">
+      <img src="../img/logo-popup.svg" alt="">
+    </div>
+    <div class="title">
+      <b>Жаль</b> видеть как вы уходите
+    </div>
+    <div class="title title--small">Можем ли мы что-нибудь сделать чтобы вас вернуть?</div>
+    <form action="form-sent" name="Uninstall" netlify-honeypot="bot-field" netlify class="center-all">
+      <div class="form_hidden input__field">
+        <label>Не заполняйте это:
+          <input name="bot-field">
+        </label>
+      </div>
+      <div class="input">
+        <label class="input__label" for="message">
+          <span class="input__label-icon">
+            <img src="../img/icon-form-text.svg" alt="">
+          </span>
+          Дайте нам подсказку
+        </label>
+        <textarea class="input__field input__field--textarea" type="message" name="message" id="message" placeholder="Проблемы в работе расширения или не хватает функционала?"
+          required></textarea>
+      </div>
+      <button class="button button--invert" type="submit">Отправить</button>
+    </form>
+  </main>
+  <!-- #endregion -->
+</body>
+
+</html>

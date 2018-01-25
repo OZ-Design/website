@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bug Report | BeTab extension</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="center-all">
+  <!-- #region Form -->
+  <main class="form">
+    <div class="form__brand">
+      <img src="img/logo-popup.svg" alt="">
+    </div>
+    <div class="title">
+      <b>Sorry</b> to see you go
+    </div>
+    <div class="title title--small">Anything we can do to get you back?</div>
+    <form action="form-sent" name="Uninstall" netlify-honeypot="bot-field" netlify class="center-all">
+      <div class="form_hidden input__field">
+        <label>Don’t fill this out:
+          <input name="bot-field">
+        </label>
+      </div>
+      <div class="input">
+        <label class="input__label" for="message">
+          <span class="input__label-icon">
+            <img src="img/icon-form-text.svg" alt="">
+          </span>
+          Give us a clue
+        </label>
+        <textarea class="input__field input__field--textarea" type="message" name="message" id="message" placeholder="Issues or feature requests?"
+          required></textarea>
+      </div>
+      <button class="button button--invert" type="submit">Submit</button>
+    </form>
+  </main>
+  <!-- #endregion -->
+</body>
+
+</html>

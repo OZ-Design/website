@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bug Report | BeTab extension</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="center-all">
+  <!-- #region Form -->
+  <main class="form">
+    <div class="form__brand">
+      <img src="img/logo-popup.svg" alt="">
+    </div>
+    <div class="title">
+      <b>Report a bug</b> in extension
+    </div>
+    <form action="form-sent" name="Bug Report" netlify-honeypot="bot-field" netlify class="center-all">
+      <div class="input">
+        <label class="input__label" for="email">
+          <span class="input__label-icon">
+            <img src="img/icon-form-email.svg" alt="">
+          </span>
+          Your email
+        </label>
+        <input class="input__field" type="email" name="email" id="email" placeholder="your@email.com" required>
+      </div>
+      <div class="input">
+        <label class="input__label" for="subject">
+          <span class="input__label-icon">
+            <img src="img/icon-form-subject.svg" alt="">
+          </span>
+          Subject
+        </label>
+        <input class="input__field" type="subject" name="subject" id="subject" placeholder="Short description" required>
+      </div>
+      <div class="form_hidden input__field">
+        <label>Don’t fill this out:
+          <input name="bot-field">
+        </label>
+      </div>
+      <div class="input">
+        <label class="input__label" for="message">
+          <span class="input__label-icon">
+            <img src="img/icon-form-text.svg" alt="">
+          </span>
+          Your message
+        </label>
+        <textarea class="input__field input__field--textarea" type="message" name="message" id="message" placeholder="Describe an issue you discovered in detail."
+          required></textarea>
+      </div>
+      <button class="button button--invert" type="submit">Submit</button>
+    </form>
+  </main>
+  <!-- #endregion -->
+</body>
+
+</html>

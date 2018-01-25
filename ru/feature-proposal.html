@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Предложить идею | BeTab расширение для новой вкладки</title>
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+
+<body class="center-all">
+  <!-- #region Form -->
+  <main class="form">
+    <div class="form__brand">
+      <img src="../img/logo-popup.svg" alt="">
+    </div>
+    <div class="title">
+      Предложить
+      <b> идею</b>
+    </div>
+    <form action="form-sent" name="Feature Proposal" netlify-honeypot="bot-field" netlify class="center-all">
+      <div class="input">
+        <label class="input__label" for="email">
+          <span class="input__label-icon">
+            <img src="../img/icon-form-email.svg" alt="">
+          </span>
+          Ваш email
+        </label>
+        <input class="input__field" type="email" name="email" id="email" placeholder="your@email.com" required>
+      </div>
+      <div class="form_hidden input__field">
+        <label>Не заполняйте это:
+          <input name="bot-field">
+        </label>
+      </div>
+      <div class="input">
+        <label class="input__label" for="subject">
+          <span class="input__label-icon">
+            <img src="../img/icon-form-subject.svg" alt="">
+          </span>
+          Тема обращения
+        </label>
+        <input class="input__field" type="subject" name="subject" id="subject" placeholder="Краткое описание" required>
+      </div>
+      <div class="input">
+        <label class="input__label" for="message">
+          <span class="input__label-icon">
+            <img src="../img/icon-form-text.svg" alt="">
+          </span>
+          Ваша идея
+        </label>
+        <textarea class="input__field input__field--textarea" type="message" name="message" id="message" placeholder="Опишите идею которую вы хотели бы чтобы мы добавили в расширение."
+          required></textarea>
+      </div>
+      <button class="button button--invert" type="submit">Отправить</button>
+    </form>
+  </main>
+  <!-- #endregion -->
+</body>
+
+</html>
